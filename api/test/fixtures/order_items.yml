@@ -1,0 +1,17 @@
+pending_tee:
+  order: pending_order
+  variant: classic_tee_small_black
+  quantity: 2
+  unit_price: 29.00
+  product_name: Classic Tee
+  size: S
+  color: Black
+
+paid_chino:
+  order: paid_order
+  variant: slim_chinos_32_khaki
+  quantity: 1
+  unit_price: 79.00
+  product_name: Slim Chinos
+  size: "32"
+  color: Khaki

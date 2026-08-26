@@ -1,0 +1,23 @@
+classic_tee_small_black:
+  product: classic_tee
+  sku: TEE-S-BLK
+  size: S
+  color: Black
+  price: 29.00
+  stock: 10
+
+classic_tee_medium_black:
+  product: classic_tee
+  sku: TEE-M-BLK
+  size: M
+  color: Black
+  price: 29.00
+  stock: 8
+
+slim_chinos_32_khaki:
+  product: slim_chinos
+  sku: CHINO-32-KHK
+  size: "32"
+  color: Khaki
+  price: 79.00
+  stock: 4

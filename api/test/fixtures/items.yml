@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: First item
+  description: From fixtures
+  completed: false
+
+two:
+  title: Done item
+  description: Already finished
+  completed: true

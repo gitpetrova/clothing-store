@@ -1,0 +1,13 @@
+/api/log/*
+/api/tmp/*
+/api/storage/*.sqlite3
+/api/storage/*.sqlite3-*
+/api/config/master.key
+/api/spec/examples.txt
+/web/node_modules
+/web/dist
+.env
+.env.*
+.DS_Store
+*.log
+

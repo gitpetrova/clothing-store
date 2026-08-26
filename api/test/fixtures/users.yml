@@ -1,0 +1,17 @@
+jane:
+  name: Jane Doe
+  email: jane@example.com
+  password_digest: <%= BCrypt::Password.create("password123", cost: 4) %>
+  role: user
+
+john:
+  name: John Smith
+  email: john@example.com
+  password_digest: <%= BCrypt::Password.create("password123", cost: 4) %>
+  role: user
+
+admin:
+  name: Store Admin
+  email: admin@example.com
+  password_digest: <%= BCrypt::Password.create("password123", cost: 4) %>
+  role: admin

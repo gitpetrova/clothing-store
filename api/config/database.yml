@@ -1,0 +1,33 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+#
+# Install the pg driver:
+#   gem install pg
+#
+# Ensure the pg gem is defined in your Gemfile
+#   gem "pg"
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  username: <%= ENV.fetch("DATABASE_USERNAME", "clothing_store") %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD", "clothing_store") %>
+  max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: clothing_store_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: clothing_store_test
+
+production:
+  <<: *default
+  database: clothing_store_production
+  username: clothing_store
+  password: <%= ENV.fetch("CLOTHING_STORE_DATABASE_PASSWORD", "clothing_store") %>

@@ -1,0 +1,9 @@
+tops:
+  name: Tops
+  slug: tops
+  description: Shirts, tees, and sweaters
+
+bottoms:
+  name: Bottoms
+  slug: bottoms
+  description: Pants, shorts, and skirts

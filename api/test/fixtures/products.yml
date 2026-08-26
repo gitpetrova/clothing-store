@@ -1,0 +1,11 @@
+classic_tee:
+  category: tops
+  name: Classic Tee
+  slug: classic-tee
+  description: A cotton crewneck t-shirt
+
+slim_chinos:
+  category: bottoms
+  name: Slim Chinos
+  slug: slim-chinos
+  description: Everyday stretch chinos

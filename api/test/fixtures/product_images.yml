@@ -1,0 +1,12 @@
+classic_tee_front:
+  product: classic_tee
+  url: https://example.com/classic-tee-front.jpg
+  alt_text: Classic Tee front
+  position: 0
+
+classic_tee_black:
+  product: classic_tee
+  variant: classic_tee_small_black
+  url: https://example.com/classic-tee-black.jpg
+  alt_text: Classic Tee in black
+  position: 1

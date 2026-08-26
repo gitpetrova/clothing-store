@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+
+cleanup() {
+  jobs -p | xargs -r kill
+}
+trap cleanup EXIT INT TERM
+
+cd "$root/api"
+bin/rails server -p 3000 &
+
+cd "$root/web"
+npm run dev -- --host 127.0.0.1 --port 5173 &
+
+wait

@@ -2,7 +2,8 @@ import axios from "axios"
 import { clearSession, getToken } from "@/auth/session"
 
 const http = axios.create({
-  baseURL: "/api/v1",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "/api/v1",
+  timeout: 15000,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
